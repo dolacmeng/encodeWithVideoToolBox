@@ -13,6 +13,8 @@
 		5DD6651C21FAC69F0046CC80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DD6651B21FAC69F0046CC80 /* Assets.xcassets */; };
 		5DD6651F21FAC69F0046CC80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DD6651D21FAC69F0046CC80 /* LaunchScreen.storyboard */; };
 		5DD6652221FAC69F0046CC80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD6652121FAC69F0046CC80 /* main.m */; };
+		5DD6652A21FAC6FB0046CC80 /* VideoCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD6652921FAC6FB0046CC80 /* VideoCapture.m */; };
+		5DD6652D21FADB590046CC80 /* VideoEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD6652C21FADB590046CC80 /* VideoEncoder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		5DD6651E21FAC69F0046CC80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5DD6652021FAC69F0046CC80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DD6652121FAC69F0046CC80 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5DD6652821FAC6FB0046CC80 /* VideoCapture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoCapture.h; sourceTree = "<group>"; };
+		5DD6652921FAC6FB0046CC80 /* VideoCapture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoCapture.m; sourceTree = "<group>"; };
+		5DD6652B21FADB590046CC80 /* VideoEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoEncoder.h; sourceTree = "<group>"; };
+		5DD6652C21FADB590046CC80 /* VideoEncoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoEncoder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,10 @@
 				5DD6651D21FAC69F0046CC80 /* LaunchScreen.storyboard */,
 				5DD6652021FAC69F0046CC80 /* Info.plist */,
 				5DD6652121FAC69F0046CC80 /* main.m */,
+				5DD6652821FAC6FB0046CC80 /* VideoCapture.h */,
+				5DD6652921FAC6FB0046CC80 /* VideoCapture.m */,
+				5DD6652B21FADB590046CC80 /* VideoEncoder.h */,
+				5DD6652C21FADB590046CC80 /* VideoEncoder.m */,
 			);
 			path = encodeWithVideoToolBox;
 			sourceTree = "<group>";
@@ -141,8 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DD6652A21FAC6FB0046CC80 /* VideoCapture.m in Sources */,
 				5DD6651721FAC69E0046CC80 /* ViewController.m in Sources */,
 				5DD6652221FAC69F0046CC80 /* main.m in Sources */,
+				5DD6652D21FADB590046CC80 /* VideoEncoder.m in Sources */,
 				5DD6651421FAC69E0046CC80 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

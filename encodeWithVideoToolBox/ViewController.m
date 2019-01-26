@@ -7,16 +7,33 @@
 //
 
 #import "ViewController.h"
+#import <AVFoundation/AVFoundation.h>
+#import <VideoToolbox/VideoToolbox.h>
+#import "VideoCapture.h"
 
-@interface ViewController ()
+@interface ViewController () <AVCaptureVideoDataOutputSampleBufferDelegate>
+
+/** 视频捕捉对象 */
+@property (nonatomic, strong) VideoCapture *videoCapture;
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+- (IBAction)startCapture {
+    [self.videoCapture startCapture:self.view];
+}
+
+- (IBAction)stopCapture {
+    [self.videoCapture stopCapture];
+}
+
+- (VideoCapture *)videoCapture {
+    if (_videoCapture == nil) {
+        _videoCapture = [[VideoCapture alloc] init];
+    }
+    
+    return _videoCapture;
 }
 
 
